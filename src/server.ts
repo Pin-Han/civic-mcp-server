@@ -3,6 +3,7 @@ import { registerEnvironment } from "./modules/tw-environment/index.js";
 import { registerTransit } from "./modules/tw-transit/index.js";
 import { registerAgriculture } from "./modules/tw-agriculture/index.js";
 import { registerEnergy } from "./modules/tw-energy/index.js";
+import { registerCalendar } from "./modules/tw-calendar/index.js";
 import { registerCapabilities } from "./resources/capabilities.js";
 
 export function createServer(): McpServer {
@@ -19,6 +20,7 @@ export function createServer(): McpServer {
   registerTransit(server);
   registerAgriculture(server);
   registerEnergy(server);
+  registerCalendar(server);
 
   return server;
 }
