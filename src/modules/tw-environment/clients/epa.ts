@@ -31,7 +31,7 @@ export async function fetchAirQuality(
   }
 
   const data = await response.json();
-  const records: any[] = data?.records ?? [];
+  const records: any[] = Array.isArray(data) ? data : data?.records ?? [];
 
   return records
     .filter((r: any) => r.county === location)
