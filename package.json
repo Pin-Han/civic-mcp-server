@@ -1,6 +1,6 @@
 {
   "name": "opendata-mcp-server",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "MCP server for open data — modular architecture, starting with Taiwan government data",
   "type": "module",
   "main": "./build/index.js",
