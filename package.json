@@ -1,0 +1,42 @@
+{
+  "name": "opendata-mcp-server",
+  "version": "0.1.0",
+  "description": "MCP server for open data — modular architecture, starting with Taiwan government data",
+  "type": "module",
+  "main": "./build/index.js",
+  "bin": {
+    "opendata-mcp-server": "./build/index.js"
+  },
+  "files": [
+    "build"
+  ],
+  "scripts": {
+    "build": "tsc && chmod 755 build/index.js",
+    "dev": "tsc --watch",
+    "type-check": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "open-data",
+    "typescript",
+    "ai-tools",
+    "taiwan"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "node-cache": "^5.1.2",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.2",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.5"
+  }
+}
