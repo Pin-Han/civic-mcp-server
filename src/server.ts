@@ -1,6 +1,7 @@
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { registerEnvironment } from "./modules/tw-environment/index.js";
 import { registerTransit } from "./modules/tw-transit/index.js";
+import { registerAgriculture } from "./modules/tw-agriculture/index.js";
 import { registerCapabilities } from "./resources/capabilities.js";
 
 export function createServer(): McpServer {
@@ -15,6 +16,7 @@ export function createServer(): McpServer {
   // 註冊模組
   registerEnvironment(server);
   registerTransit(server);
+  registerAgriculture(server);
 
   return server;
 }
