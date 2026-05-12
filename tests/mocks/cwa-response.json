@@ -1,0 +1,16 @@
+{
+  "records": {
+    "location": [
+      {
+        "locationName": "臺北市",
+        "weatherElement": [
+          { "elementName": "Wx", "time": [{ "parameter": { "parameterName": "多雲" } }] },
+          { "elementName": "PoP", "time": [{ "parameter": { "parameterName": "30" } }] },
+          { "elementName": "MinT", "time": [{ "parameter": { "parameterName": "24" } }] },
+          { "elementName": "MaxT", "time": [{ "parameter": { "parameterName": "31" } }] },
+          { "elementName": "CI", "time": [{ "parameter": { "parameterName": "舒適" } }] }
+        ]
+      }
+    ]
+  }
+}
